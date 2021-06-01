@@ -1,3 +1,4 @@
+import { ImageComponent } from "./item/image.js";
 import { BaseComponent } from "./component.js";
 
 export class PageComponent extends BaseComponent<HTMLUListElement> {
@@ -5,5 +6,8 @@ export class PageComponent extends BaseComponent<HTMLUListElement> {
     super('<ul class="contents_list"></ul>');
   }
 
-  appendImage() {}
+  appendImage() {
+    const image = new ImageComponent("title", "https://picsum.photos/500/200");
+    image.attachTo(this.element);
+  }
 }

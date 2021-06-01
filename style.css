@@ -66,6 +66,8 @@ body {
   background-color: var(--accent-color);
   width: 6rem;
   height: 2rem;
+
+  cursor: pointer;
 }
 
 .main {
@@ -117,6 +119,8 @@ body {
 .contents_info .delete {
   text-align: end;
   margin: 0.3rem;
+
+  cursor: pointer;
 }
 
 .footer {
